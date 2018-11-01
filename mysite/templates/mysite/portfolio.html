@@ -1,0 +1,46 @@
+{% extends 'mysite/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<h1>Welcome to my portfolio page</h1>
+
+<p>Take a look around and let me know what you think.</p>
+
+<div class="container" style="margin:100px, 0, 100px, 0">
+  <div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="{% static 'mysite/images/portfolio_placeholder.png' %}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Aerial view of house on island</h5>
+        <p class="card-text">This is an aerial view of the island of Jamaica...</p>
+        <p class="card-text">
+          <small class="text-muted">@itscharu</small>
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="{% static 'mysite/images/portfolio_placeholder.png' %}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">FireFight</h5>
+        <p class="card-text">IOT Application to help firefighters. Includes Facial Tracking and Environment detection</p>
+        <p class="card-text">
+          <small class="text-muted">Internet of Things</small>
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="{% static 'mysite/images/portfolio_placeholder.png' %}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Kupika</h5>
+        <p class="card-text">Smart Container for Babies - IOT based Application and hardware</p>
+        <p class="card-text">
+          <small class="text-muted">Android Developement</small>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
